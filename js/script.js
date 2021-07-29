@@ -9,7 +9,7 @@ $(document).ready(function(){
                 });                          
                 // Display repo details in implementations section
                 $(repoTags).each(function(tagIndex, tag){
-                    $(".implementations").append("<section class='implementation' id='" + tag.title.replaceAll(" ","").replaceAll("/", "-").replace("#", "sharp").toLowerCase() + "'><h1 class='implementation-title'>" + tag.title + "</h1><p>"
+                    $(".implementations").append("<section class='col-6 pb-4' id='" + tag.title.replaceAll(" ","").replaceAll("/", "-").replace("#", "sharp").toLowerCase() + "'><h3 class='implementation-title'>" + tag.title + "</h3><p>"
                         + tag.description + "</p><div class='links'><a class='implementation-buttons' href='" 
                         + tag.sourceCodeUrl + "'>View on GitHub</a></div></section>");
                 });
